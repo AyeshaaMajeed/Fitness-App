@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... -->
+</head>
+<body class="bg-eee">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/framework.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Fitness Dashboard</title>
+</head>
+<body class="bg-eee">
+    <div class="page d-flex bg-eee">
+        <!-- Sidebar -->
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative text-center pb-15 mb-30 hide-mobile"><a href="/">Fitness Machine</a></h3>
+            <ul>
+                <li>
+                    <a href="index.html" class="active fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-regular fa-chart-bar fa-fw mr-10"></i>
+                        <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-solid fa-gear fa-fw mr-10"></i>
+                        <span class="hide-mobile">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-regular fa-user fa-fw mr-10"></i>
+                        <span class="hide-mobile">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                        <i class="fa-regular fa-credit-card fa-fw mr-10"></i>
+                        <span class="hide-mobile">Plans</span>
+                    </a>
+                </li>
+                <li>
+                <a href="notification.html" class="fs-14 rad-6 d-flex align-center c-black p-10">
+                <i class="fa-regular fa-bell fa-fw mr-10"></i>
+                <span class="hide-mobile">Notification</span>
+                </a>
+            </li>
+            </ul>
+        </div>
+        <!-- End Sidebar -->
+        <!-- Content -->
+        <div class="content w-full">
+            <!-- Content Head -->
+            <div class="head p-20 p-10-mobile bg-white between-flex">
+                <div class="p-relative">
+                    Get yoursefl ready for this adventure!
+                </div>
+                <div class="icons d-flex align-center">
+                    <a href="notification.html" class="mr-15 p-relative"><i class="fa-regular fa-bell fa-lg"></i></a>
+                    <img src="./imgs/avatar.png" alt="User Avatar">
+                </div>
+            </div>
+            <!-- End Content Head -->
+            <h1 class="p-relative">Fitness Dashboard</h1>
+            <!-- Wrapper -->
+            <div class="wrapper d-grid gap-20">
+                <!-- Welcome Widget -->
+                <div class="welcome bg-white rad-10 overflow-hidden text-center-mobile">
+                    <div class="intro p-20 bg-eee between-flex block-mobile">
+                        <div class="text">
+                            <h2>Welcome,</h2>
+                            <p class="c-grey mt-5 loggedin_username">Ahmad Shareef</p>
+                        </div>
+                        <img class="welcome-img hide-mobile" src="./imgs/welcome.png" alt="Welcome Image">
+                    </div>
+                    <img class="avatar-img" src="./imgs/avatar.png" alt="User Avatar">
+                    <div class="body p-20">
+                        <div class="info d-flex mb-20 gap-10 text-center block-mobile">
+                            <div class="mb-20 mt-20 loggedin_username">Ahmad Shareef<span class="d-block c-grey mt-5 fs-14">Fitness Enthusiast</span></div>
+                            <div class="mb-20 mt-20">30 Workouts<span class="d-block c-grey mt-5 fs-14">Completed</span></div>
+                            <div class="mb-20 mt-20">1500 kcal<span class="d-block c-grey mt-5 fs-14">Burned</span></div>
+                        </div>
+                        <a href="./profile.html" class="visit c-white bg-blue fs-14 d-block w-fit btn-shape">View Profile</a>
+                    </div>
+                </div>
+                <!-- End Welcome Widget -->
+                <!-- Quick Draft Widget -->
+                <div class="quick-draft bg-white p-20 rad-10">
+                    <h2>Quick Log</h2>
+                    <p class="mt-5 fs-14 c-grey mb-20">Log Your Recent Workout</p>
+                    <form>
+                        <input type="text" class="w-full p-10 bg-eee d-block b-none rad-6 mb-20" placeholder="Workout Title">
+                        <textarea class="mb-20 w-full bg-eee b-none rad-6 p-10 d-block" placeholder="Workout Details"></textarea>
+                        <button type="submit" class="btn-shape bg-blue c-white fs-14 b-none d-block">Log Workout</button>
+                    </form>
+                </div>
+                <!-- End Quick Draft Widget -->
+                <!-- Yearly Targets Widget -->
+                <div class="yearly-targets p-20 bg-white rad-10">
+                    <h2>Yearly Targets</h2>
+                    <p class="fs-14 c-grey mt-5 mb-20">Fitness Goals for the Year</p>
+                    <div class="target-row d-flex align-center mt-10 mb-10 gap-10 blue">
+                        <div class="icon center-flex rad-6">
+                            <i class="fa-solid fa-dumbbell fa-lg c-blue"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">Workouts</span>
+                            <span class="fs-14 d-block mt-5 mb-10">150</span>
+                            <div class="progress w-full rad-6 p-relative">
+                                <span style="width: 60%;" class="bg-blue d-block">
+                                    <span class="fw-bold c-white bg-blue rad-6">60%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="target-row d-flex align-center mt-10 mb-10 gap-10 orange">
+                        <div class="icon center-flex rad-6">
+                            <i class="fa-solid fa-apple-alt fa-lg c-orange"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">Calories Burned</span>
+                            <span class="fs-14 d-block mt-5 mb-10">50,000 kcal</span>
+                            <div class="progress w-full rad-6 p-relative">
+                                <span style="width: 40%;" class="bg-orange d-block">
+                                    <span class="fw-bold c-white bg-orange rad-6">40%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="target-row d-flex align-center mt-10 mb-10 gap-10 green">
+                        <div class="icon center-flex rad-6">
+                            <i class="fa-solid fa-user-friends fa-lg c-green"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 c-grey">New Personal Records</span>
+                            <span class="fs-14 d-block mt-5 mb-10">10</span>
+                            <div class="progress w-full rad-6 p-relative">
+                                <span style="width: 70%;" class="bg-green d-block">
+                                    <span class="fw-bold c-white bg-green rad-6">70%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Yearly Targets Widget -->
+                <!-- Tasks Widget -->
+                <div class="tasks p-20 rad-10 bg-white">
+                    <h2 class="mb-20">Upcoming Workouts</h2>
+                    <div class="task-row between-flex gap-10">
+                        <div class="info">
+                            <h3 class="fs-16 fw-bold mb-5">Morning Run</h3>
+                            <p class="fs-14 c-grey">Run 5km in the park</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task-row between-flex gap-10">
+                        <div class="info">
+                            <h3 class="fs-16 fw-bold mb-5">Yoga Session</h3>
+                            <p class="fs-14 c-grey">Attend the evening yoga class</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task-row between-flex gap-10">
+                        <div class="info">
+                            <h3 class="fs-16 fw-bold mb-5">Strength Training</h3>
+                            <p class="fs-14 c-grey">Complete full-body workout</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task-row between-flex gap-10 done">
+                        <div class="info">
+                            <h3 class="fs-16 fw-bold mb-5">Cycling</h3>
+                            <p class="fs-14 c-grey">Ride 20km on the bike</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                    <div class="task-row between-flex gap-10">
+                        <div class="info">
+                            <h3 class="fs-16 fw-bold mb-5">Swimming</h3>
+                            <p class="fs-14 c-grey">Swim 1km at the pool</p>
+                        </div>
+                        <i class="fa-regular fa-trash-can delete"></i>
+                    </div>
+                </div>
+                <!-- End Tasks Widget -->
+                <!-- Reminders Widget -->
+                <div class="reminders p-20 bg-white rad-10">
+                    <h2 class="mb-20">Reminders</h2>
+                    <ul>
+                        <li class="d-flex align-center">
+                            <span class="key mr-15 bg-blue rad-half"></span>
+                            <div class="info blue pl-15">
+                                <p class="fs-15 fw-600 mb-5">Hydrate</p>
+                                <span class="fs-13 c-grey">Drink 8 glasses of water</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-center">
+                            <span class="key mr-15 bg-green rad-half"></span>
+                            <div class="info green pl-15">
+                                <p class="fs-15 fw-600 mb-5">Meal Prep</p>
+                                <span class="fs-13 c-grey">Prepare healthy meals</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-center">
+                            <span class="key mr-15 bg-orange rad-half"></span>
+                            <div class="info orange pl-15">
+                                <p class="fs-15 fw-600 mb-5">Stretch</p>
+                                <span class="fs-13 c-grey">Do a 10-minute stretch</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-center">
+                            <span class="key mr-15 bg-red rad-half"></span>
+                            <div class="info red pl-15">
+                                <p class="fs-15 fw-600 mb-5">Rest</p>
+                                <span class="fs-13 c-grey">Get at least 8 hours of sleep</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Reminders Widget -->
+                <!-- Latest Post Widget -->
+                <div class="latest-post p-20 bg-white rad-10">
+                    <h2 class="mb-20">Latest Blog Post</h2>
+                    <div class="top d-flex align-center">
+                        <img src="./imgs/avatar.png" class="mr-15" alt="Author Avatar">
+                        <div class="info">
+                            <span class="fs-16 fw-600 d-block mb-5 loggedin_username" >Ahmad Shareef</span>
+                            <span class="fs-14 c-grey fw-500">About 3 Hours Ago</span>
+                        </div>
+                    </div>
+                    <div class="content pt-20 pb-20 mt-20 mb-20 text-center-mobile">
+                        <p class="fw-500">Staying motivated can be challenging, but setting realistic goals and celebrating small wins makes the journey enjoyable.</p>
+                    </div>
+                    <div class="stats between-flex c-grey">
+                        <div>
+                            <i class="fa-regular fa-heart"></i>
+                            <span class="fw-500">1.2K</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-comments"></i>
+                            <span class="fw-500">300</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Latest Post Widget -->
+            </div>
+            <!-- End Wrapper -->
+        </div>
+        <!-- End Content -->
+    </div>
+</body>
+
+<script>
+    // Retrieve loggedInUser from localStorage and display its username
+    var loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+    // Override the username in the dashboard with the username of the loggedInUser for all 'Ahmad Shareef' instances
+    var usernameElements = document.querySelectorAll('.loggedin_username');
+    usernameElements.forEach(function(element) {
+        element.innerHTML = loggedInUser.username;
+    });
+</script>
+
+</html>

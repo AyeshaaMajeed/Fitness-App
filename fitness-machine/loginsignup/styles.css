@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #28a745;
+    --primary-hover-color: #218838;
+    --error-color: #dc3545;
+    --background-color: #e9ecef;
+    --container-background-color: #ffffff;
+    --text-color: #212529;
+    --border-color: #ced4da;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container,
+.login-container {
+    background-color: var(--container-background-color);
+    padding: 20px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    height: 85vh;
+    width: 30vw;
+}
+
+.signup-container h2,
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.error {
+    margin-top: 5px;
+    display: block;
+    color: var(--error-color);
+}
+
+input.error {
+    border-color: var(--error-color);
+}
